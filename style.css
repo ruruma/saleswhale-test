@@ -1,0 +1,85 @@
+*{
+    font-family: Source Sans Pro;
+}
+
+/* Navbar */
+nav *{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.navbar{
+    padding: 10px 0 40px 0 !important;
+
+}
+
+.navbar-brand{
+    font-size: 30px !important;
+}
+
+.hero-logo{
+    max-height: 40px;
+    margin-bottom: 3px !important;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #002240 !important;
+}
+
+.nav-item {
+    margin-right: 40px !important;
+}
+
+.btn-style{
+    border: 1px solid #0688FA;
+    border-radius: 5px;
+}
+
+.btn-primary{
+    padding-left: 29px !important;
+    padding-right: 29px !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+
+.btn-primary-login{
+    padding-left: 26px !important;
+    padding-right: 26px !important;
+}
+
+.loginButton{
+    padding-right: 13px;
+}
+
+.loginButton a button{
+    background-color: white;
+}
+
+.loginButton a button span{
+    color: #0688FA;
+}
+
+
+@media (min-width: 768px) {
+    .navbar-nav.navbar-center {
+      position: absolute;
+      left: 50%;
+      transform: translatex(-50%);
+    }
+  }
+
+
+/* Jumbotron */
+
+.jumbotron{
+    margin-top: 30px !important;
+    height: 300px;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    border-radius: 5px !important;
+    border: none;
+    background-image: url(/assets/hero-img.png);
+    background-size: cover;
+}
