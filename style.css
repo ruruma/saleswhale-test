@@ -1,85 +1,191 @@
-*{
-    font-family: Source Sans Pro;
+* {
+  font-family: Source Sans Pro;
 }
 
 /* Navbar */
-nav *{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 23px;
+nav * {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
 }
 
-.navbar{
-    padding: 10px 0 40px 0 !important;
-
+.navbar {
+  padding: 10px 0 40px 0 !important;
 }
 
-.navbar-brand{
-    font-size: 30px !important;
+.navbar-brand {
+  font-size: 30px !important;
 }
 
-.hero-logo{
-    max-height: 40px;
-    margin-bottom: 3px !important;
+.hero-logo {
+  max-height: 40px;
+  margin-bottom: 3px !important;
 }
 
-.navbar-light .navbar-nav .nav-link{
-    color: #002240 !important;
+.navbar-light .navbar-nav .nav-link {
+  color: #002240 !important;
 }
 
 .nav-item {
-    margin-right: 40px !important;
+  margin-right: 40px !important;
 }
 
-.btn-style{
-    border: 1px solid #0688FA;
-    border-radius: 5px;
+.btn-style {
+  border: 1px solid #0688fa;
+  border-radius: 5px;
 }
 
-.btn-primary{
-    padding-left: 29px !important;
-    padding-right: 29px !important;
-    padding-top: 8px !important;
-    padding-bottom: 8px !important;
+.btn-primary {
+  padding-left: 29px !important;
+  padding-right: 29px !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
 }
 
-.btn-primary-login{
-    padding-left: 26px !important;
-    padding-right: 26px !important;
+.btn-primary-login {
+  padding-left: 26px !important;
+  padding-right: 26px !important;
 }
 
-.loginButton{
-    padding-right: 13px;
+.loginButton {
+  padding-right: 13px;
 }
 
-.loginButton a button{
-    background-color: white;
+.loginButton a button {
+  background-color: white;
 }
 
-.loginButton a button span{
-    color: #0688FA;
+.loginButton a button span {
+  color: #0688fa;
 }
-
 
 @media (min-width: 768px) {
-    .navbar-nav.navbar-center {
-      position: absolute;
-      left: 50%;
-      transform: translatex(-50%);
-    }
+  .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
   }
-
+}
 
 /* Jumbotron */
 
-.jumbotron{
-    margin-top: 30px !important;
-    height: 300px;
-    -webkit-border-radius: 5px !important;
-    -moz-border-radius: 5px !important;
-    border-radius: 5px !important;
-    border: none;
-    background-image: url(/assets/hero-img.png);
-    background-size: cover;
+.jumbotron {
+  margin-top: 30px !important;
+  height: 300px;
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  border-radius: 5px !important;
+  border: none;
+  background-image: url(assets/hero-img.png);
+  background-size: cover;
+}
+
+.hero-wrapper{
+  padding-top: 20px !important;
+}
+
+.hero-slogan{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 58px;
+  line-height: 62px;
+}
+
+.hero-text{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+
+/* Our Culutre */
+
+.culture-block{
+  padding-top: 80px;
+}
+
+.block-name-wrapper{
+  text-align: center;
+}
+
+@media (max-width: 768px){
+  .block-name-wrapper{
+    text-align: left;
+  }
+}
+
+.block-name{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 58px;
+  line-height: 62px;
+}
+
+.culture-description{
+  padding-top: 27px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 38px;
+  letter-spacing: 0.01em;
+  font-feature-settings: 'kern' off;
+  color: #537089;
+}
+
+
+.culture-blocks-wrapper{
+  padding-top: 50px;
+}
+
+.icon-wrapper{
+  width: auto;
+}
+
+.culture-block-title{
+  padding-top: 18px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 34px;
+  color: #002240;
+}
+
+.culture-block-text{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #537089;
+}
+
+.culture-footer{
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 38px;
+  text-align: center;
+  color: #002240;
+}
+
+.join-button-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.join-button-wrapper a button{
+  background: #0688FA;
+  mix-blend-mode: normal;
+  border-radius: 5px;
+  padding: 16px 37px 18px 37px !important;
+}
+
+.join-button-wrapper a button span{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
 }
