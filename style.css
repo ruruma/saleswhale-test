@@ -278,3 +278,19 @@ nav * {
      width: 40px;
    }
 }
+
+/* Investors */
+
+.investors-first{
+  height: 500px;
+  background-image: url('/saleswhale-test/assets/Vector_19.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.investors-second{
+  height: 500px;
+  background-image: url('/saleswhale-test/assets/Mask_Group.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
