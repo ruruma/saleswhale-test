@@ -294,3 +294,21 @@ nav * {
   background-position: bottom;
   background-repeat: no-repeat;
 }
+
+.investors-title{
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 58px;
+  line-height: 62px;
+  color: #002240;
+}
+
+.investor-card-first{
+  height: 100px;
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+}
