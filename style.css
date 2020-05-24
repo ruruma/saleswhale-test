@@ -420,7 +420,7 @@ nav * {
   font-size: 48px;
   line-height: 120%;
   color: #FFFFFF;
-  padding-bottom: 10px;
+  padding-bottom: 26px;
 }
 
 .above-footer-button-wrapper{
@@ -445,7 +445,7 @@ nav * {
   align-items: center;
   text-align: center;
   color: #002240;
-  margin: 8px 40px 8px 40px;
+  margin: 11px 70px 11px 70px;
 }
 
 .above-footer-button:nth-last-child(1){
@@ -466,5 +466,5 @@ nav * {
   align-items: center;
   text-align: center;
   color: #FFFFFF;
-  margin: 8px 40px 8px 40px;
+  margin: 11px 70px 11px 70px;
 }
