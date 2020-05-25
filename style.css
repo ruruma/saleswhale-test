@@ -60,13 +60,7 @@ nav * {
   color: #0688fa;
 }
 
-@media (min-width: 768px) {
-  .navbar-nav.navbar-center {
-    position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
-  }
-}
+
 
 /* Jumbotron */
 
@@ -108,12 +102,6 @@ nav * {
 
 .block-name-wrapper{
   text-align: center;
-}
-
-@media (max-width: 768px){
-  .block-name-wrapper{
-    text-align: left;
-  }
 }
 
 .block-name{
@@ -256,45 +244,22 @@ nav * {
   height: 200px;
 }
 
-@media (max-width: 768px){
-  .timeline-block-text{
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    margin-left: 5px;
-    color: #002240;
-  }
-  .timeline-date{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
-    padding-top: 56px;
-    margin-right: 10px;
-    color: #0688FA;
-   }
-   .timeline-icon img{
-     width: 40px;
-   }
-}
 
 /* Investors */
 
 .investors-first{
-  height: 600px;
+  height: auto;
   background-image: url('/saleswhale-test/assets/Vector_19.png');
-  background-repeat: no-repeat;
   background-position: bottom;
-  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .investors-second{
   height: auto;
   background-image: url('/saleswhale-test/assets/Mask_Group.png');
-  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: top;
+  margin-bottom: 60px;
 }
 
 .investors-title{
@@ -356,16 +321,6 @@ nav * {
   margin-bottom: 54px;
 }
 
-@media (max-width: 769px){
-  .investors-card-wrapper{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 80px;
-    margin-top: 67px;
-  }
-}
-
-
 .investor-second-title{
   display: flex;
   justify-content: center;
@@ -374,8 +329,8 @@ nav * {
   font-size: 58px;
   line-height: 62px;
   color: #002240;
-  /* margin-top: 110px; */
   margin-bottom: 60px;
+  padding-top: 110px;
 }
 
 .investors-second-wrapper{
@@ -384,11 +339,7 @@ nav * {
   grid-gap: 80px;
 }
 
-@media (max-width: 769px){
-  .investors-second-wrapper{
-    grid-template-columns: 1fr;
-  }
-}
+
 
 .investors-logos{
   background: #FFFFFF;
@@ -422,6 +373,7 @@ nav * {
   color: #FFFFFF;
   padding-bottom: 26px;
 }
+
 
 .above-footer-button-wrapper{
   display: flex;
@@ -467,4 +419,237 @@ nav * {
   text-align: center;
   color: #FFFFFF;
   margin: 11px 70px 11px 70px;
+}
+
+
+/* Footer */
+
+.grid-sales{
+  grid-area: sales;
+}
+
+.grid-contact{
+  grid-area: contact;
+}
+
+.grid-product{
+  grid-area: product;
+}
+
+.grid-company{
+  grid-area: company;
+}
+
+.footer-wrapper{
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: 2fr 1.2fr 1fr 1fr 1fr;
+  grid-template-areas:'logo sales product company contact';
+  grid-gap: 20px;
+  padding-bottom: 45px;
+}
+
+.footer-logo img{
+  grid-area: logo;
+  width: 200px;
+}
+
+.footer-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer-block ul li a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-block ul{
+  padding: 0;
+  list-style-type: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 42px;
+  color: #002240;
+}
+
+.footer-block-title{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 42px;
+  color: #002240;
+}
+
+.footer-block-title-contact{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 42px;
+  color: #002240;
+}
+
+.contact-style li{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  color: #002240;
+}
+
+.second-footer{
+  height: auto;
+  background-image: url(/saleswhale-test/assets/footer-waves.svg);
+  background-color: #F4F4F4;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.second-footer-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 60px 30px 0 30px;
+  padding-bottom: 200px;
+  grid-template-areas: 'terms' 
+                         'socials'; 
+}
+
+.terms-group{
+  grid-area: terms;
+  display: flex;
+  padding-top: 12px;
+}
+
+.second-footer-socials ul{
+  grid-area: socials;
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+.second-footer-socials ul li{
+  padding-left: 15px;
+}
+
+.second-footer-item{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #002240;
+  padding-right: 30px;
+}
+
+.copyright{
+  padding-top: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #002240;
+}
+
+
+
+@media (max-width: 768px){
+
+  .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+  .block-name-wrapper{
+    text-align: left;
+  }
+  .timeline-block-text{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 5px;
+    color: #002240;
+  }
+  .timeline-date{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 56px;
+    margin-right: 10px;
+    color: #0688FA;
+   }
+   .timeline-icon img{
+     width: 40px;
+   }
+   .investors-first{
+    background-size: cover;
+   }
+   .investors-second{
+    height: auto;
+    background-image: url('/saleswhale-test/assets/mobile-investors.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-bottom: 60px;
+    background-size: 130%;
+  }
+  .investors-second-wrapper{
+    grid-template-columns: 1fr;
+  }
+  .investors-card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 80px;
+    margin-top: 67px;
+  }
+  .footer-wrapper{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:'logo logo'
+                        'sales product'
+                        'company contact';
+  }
+  .footer-logo{
+    padding-left: 0px;
+    width: 130px;
+  }
+  .second-footer-content{
+    grid-template-columns: 1fr;
+    grid-template-areas: 'socials' 
+                         'terms'; 
+  }
+  .second-footer-socials ul{
+    justify-content: center;
+  }
+  .terms-group{
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 10px 0;
+  }
+  .second-footer-item:nth-child(1){
+    padding-right: 0px;
+    padding-bottom: 13px;
+  }
+  .second-footer-item:nth-child(2){
+    padding-right: 0px;
+    padding-bottom: 15px;
+  }
+  .copyright{
+    text-align: center;
+  }
+  .second-footer-socials{
+    margin-bottom: 25px;
+  }
+  .second-footer-socials ul li{
+    padding-left: 0px;
+    margin-right: 25px;
+  }
+  .second-footer-socials ul li:nth-child(3){
+    margin-right: 0px;
+  }
+  .second-footer-socials ul{
+    margin: 0px;
+    padding: 0px;
+  }
 }
