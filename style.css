@@ -355,6 +355,7 @@ nav * {
 }
 
 .investors-logos img{
+  width: 50%;
   margin: 80px 0 80px 0;
 }
 
@@ -397,7 +398,7 @@ nav * {
   align-items: center;
   text-align: center;
   color: #002240;
-  margin: 11px 70px 11px 70px;
+  margin: 11px 40px 11px 40px;
 }
 
 .above-footer-button:nth-last-child(1){
@@ -418,7 +419,7 @@ nav * {
   align-items: center;
   text-align: center;
   color: #FFFFFF;
-  margin: 11px 70px 11px 70px;
+  margin: 11px 40px 11px 40px;
 }
 
 
@@ -553,7 +554,7 @@ nav * {
 
 
 
-@media (max-width: 768px){
+@media (max-width: 375px){
 
   .navbar-nav.navbar-center {
     position: absolute;
@@ -571,6 +572,12 @@ nav * {
     margin-left: 5px;
     color: #002240;
   }
+  .investors-logos img{
+    width: 70%;
+  }
+  .timeline-background{
+    background-color: #EFF8FF;
+  }
   .timeline-date{
     font-style: normal;
     font-weight: bold;
@@ -586,6 +593,21 @@ nav * {
    .investors-first{
     background-size: cover;
    }
+   .jumbo-container{
+     background-image: url(/saleswhale-test/assets/see_future_background.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+   }
+   .jumbotron:nth-child(1){
+    background: none !important;
+    border: none !important;
+    border-radius:0 !important;
+  }
+  .above-footer-block-title{
+    padding-top: 60px;
+    font-size: 32px;
+    line-height: 40px;
+  }
    .investors-second{
     height: auto;
     background-image: url('/saleswhale-test/assets/mobile-investors.png');
@@ -613,6 +635,32 @@ nav * {
   .footer-logo{
     padding-left: 0px;
     width: 130px;
+  }
+  .above-footer-button-wrapper{
+    flex-direction: column;
+  }
+  .above-footer-block-title{
+    margin: 30px 0px 30px 0;
+  }
+  .above-footer-button{
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .second-footer{
+    background-size: 250%;
+    background-position-x: -350px;
+  }
+  .above-footer-button:nth-of-type(1){
+    margin-left: 0;
+  }
+  .above-footer-button:nth-last-child(1){
+    margin-left: 0;
+  }
+  .above-footer-button:nth-last-child(1) span{
+    margin: 5px 20px 5px 20px;
+  }
+  .above-footer-button:nth-of-type(1) span{
+    margin: 5px 20px 5px 20px;
   }
   .second-footer-content{
     grid-template-columns: 1fr;
@@ -651,5 +699,15 @@ nav * {
   .second-footer-socials ul{
     margin: 0px;
     padding: 0px;
+  }
+}
+
+@media (max-width: 768px){
+  .footer-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    grid-template-rows: 1fr 1fr !important;
+    grid-template-areas:'logo sales product'
+                        '. company contact';
   }
 }
